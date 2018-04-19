@@ -6,3 +6,9 @@
 .pub-list-item .pub-abstract {
   font-size: .8rem;
 }
+
+
+#profile .portrait:hover {
+	/*!important overrides the style in the html*/
+	background-image: url('/img/portrait2.png')!important;
+}
