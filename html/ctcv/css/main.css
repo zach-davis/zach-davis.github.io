@@ -1,0 +1,201 @@
+/*body {
+  color: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}*/
+
+
+h1 {
+    font-size: 2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    /*text-align: center;*/
+}
+h2 {
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h3 {
+    font-size: 1.2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: center;
+}
+p {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #333;
+}
+li {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #333;
+}
+fieldset {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #333;
+}
+output {
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-size: 2em;
+  padding: .3em;
+}
+
+div.spacer { clear: both; }
+
+div.blank-slider {
+    width:150px;
+    height:1px;
+    padding: 0px 0px;
+    float:left;
+}
+
+div.judge-spacer {
+    width:50px;
+    height:1px;
+    padding: 0px 0px;
+    float:left;
+}
+
+.button {
+    background-color: #CCCCCC; /* Gray */
+    border: #000000;
+    color: #000000;
+    padding: 5px 15px;
+    /*text-align: center;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.button:disabled {
+    background-color: #EEEEEE; /* Gray */
+    border: #333333;
+    color: #333333;
+    padding: 5px 15px;
+    /*text-align: center;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+ #custom-handlex {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.2em;
+    width: 3em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin-top: -.4em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-handley {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.2em;
+    width: 3em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin-top: -.4em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-handlez {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.2em;
+    width: 3em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin-top: -.4em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-judgexy {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    width: 4em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin: -2em;
+    margin-top: -.15em;
+    text-align: center;
+    align-items: center;
+    line-height: 1.6em;
+  }
+
+   #custom-judgexz {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    width: 4em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin: -2em;
+    margin-top: -.15em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-judgeyx {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    width: 4em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin: -2em;
+    margin-top: -.15em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-judgeyz {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    width: 4em;
+    height: 1.6em;
+    left: -180%;
+    right: 100;
+    /*top: 50%;*/
+    margin: -2em;
+    margin-top: -.15em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-judgezx {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    width: 4em;
+    height: 1.6em;
+    left: -180%;
+    margin: -2em;
+    margin-top: -.15em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+   #custom-judgezy {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    width: 4em;
+    height: 1.6em;
+    left: -180%;
+    /*top: 50%;*/
+    margin: -2em;
+    margin-top: -.15em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+

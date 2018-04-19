@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Continuous time control</title>
+
+    <!-- Libraries -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <!-- <script src="lib/rangeslider.js"></script> -->
+    <!-- <script src="lib/ivank.js"></script> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+
+    <!-- JS -->
+    <script src="main.js" charset="utf-8"></script>
+</head>
+
+<body onload="InitialiseBeta()">
+
+  <h1>Continuous causal control demo</h1>
+
+<ul>
+	<li>Press "<b>O</b>" to move the gray slider upward.
+	<li>Press "<b>K</b>" to hold the gray slider in position.
+	<li>Press "<b>M</b>" to move the gray slider downward.
+	<li><b>Try to keep the other slider in the green region!</b>
+</ul>
+	<!-- <div id="container-exp"> -->
+	
+	<!-- trying out the popup -->
+
+	<button type="button" id="stage-start" class="button"><!-- btn btn-primary btn-lg continue -->
+        Begin trial
+    </button>
+
+
+
+	<div id="trial">
+
+        <div id='mask'>
+            <button type='button' id='popup' class='button' style="top: 400;"> 
+                Click here to begin Phase 2.<br>
+                Phase 2 will have the <span style="font-weight:bold">same connections</span>, but a <span style="font-weight:bold">different reward region</span>
+            </button>
+        </div>
+
+    	<!-- First slider -->
+    	<div class = "blank-slider" style="width:150px"></div>
+        <div style="display: flex; justify-content: flex-end; align-items: center; padding: 15px; float: left;">
+            <div id="slidex" style="height:200px;">
+                <div id="custom-handlex" class="ui-slider-handle"></div>
+            </div>
+        </div>
+        <div class = "blank-slider" style="width:150px"></div>
+
+        <div class = "spacer"></div>
+
+        <div class = "blank-slider" style="width:0px"></div>
+
+        <!-- Second slider -->
+        <div style="display: flex; align-items: center; padding: 15px; float: left;">
+            <div id="slidey" style="height:200px;">
+                <div id="custom-handley" class="ui-slider-handle"></div>
+                <div id="green"></div>
+            </div>
+        </div>
+
+        <div class = "blank-slider" style="width:200px;"></div>
+
+        <!-- Third slider -->
+        <div style="display: flex; align-items: center; padding: 15px; float: left;">
+            <div id="slidez" style="height:200px;">
+                <div id="custom-handlez" class="ui-slider-handle"></div>
+            </div>
+        </div>
+
+
+	</div>
+
+	<div class = "spacer"></div>
+    <fieldset style = "display:inline-block;">
+        <h3 id="countdown">40 seconds remaining</h3>
+    </fieldset>
+
+    <fieldset style = "display:inline-block;">
+        <h3 id="score_display">Score: $0.00</h3>
+    </fieldset>
+
+	<div id="query1"></div>
+
+
+	<!-- Choosers -->
+    <fieldset  style = "display:inline-block;">
+        <button class="button" id = "showHideBtn" onclick="ShowHide();">Show/Hide</button>
+        <legend>View or manually change the connections</legend>
+         
+        <fieldset id = "manual_panel" style="float:left;margin:5px">
+            x->y: <input type="text" class = "input"  id="beta1_set" style="width:50px;" onchange="SetBeta();">
+            x->z: <input type="text" class = "input"  id="beta2_set" style="width:50px;" onchange="SetBeta();">
+            y->x: <input type="text" class = "input"  id="beta3_set" style="width:50px;" onchange="SetBeta();">
+            <br>
+            y->z: <input type="text" class = "input"  id="beta4_set" style="width:50px;" onchange="SetBeta();">
+            z->x: <input type="text" class = "input"  id="beta5_set" style="width:50px;" onchange="SetBeta();">
+            z->y: <input type="text" class = "input"  id="beta6_set" style="width:50px;" onchange="SetBeta();">
+        </fieldset>
+    </fieldset>
+
+</body>
